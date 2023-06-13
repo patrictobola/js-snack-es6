@@ -35,6 +35,9 @@ const students = [
         grades: 84
     }
 ]
+
+console.log("Exercise number 2 starts here")
+console.log("--------------------------")
 // Creo una lista dove filtro solo gli studenti con voto superiore a 70 lasciando anche le altre info 
 const goodStudents = students.filter(students => students.grades > 70)
 console.log(goodStudents)

@@ -6,3 +6,6 @@ const vipTable = vip.map((vip, index) => ({
     name: vip,
     seat: index + 1
   }));
+
+
+  console.table(vipTable);
