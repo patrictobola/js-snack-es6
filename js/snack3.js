@@ -24,6 +24,6 @@ const bikes = [
         weight: 15,
     }
 ]
-// console.log(bikes)
-// const lessWeight = bikes.reduce((accumulator, element) => accumulator.weight < element.weight ? accumulator : element, 0);
-// console.log(lessWeight)
+console.log(bikes)
+const lessWeight = bikes.reduce((accumulator, element) => accumulator.weight < element.weight ? accumulator : element, 0);
+console.log(lessWeight)
