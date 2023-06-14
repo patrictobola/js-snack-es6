@@ -52,6 +52,7 @@ const updatedTeams = teams.map(({name, fouledAgainst}) => (
         fouledAgainst
     }
 ));
+// const updatedTeams = teams
 console.log("---------------")
 console.log("Aggiornato")
 console.log(updatedTeams)

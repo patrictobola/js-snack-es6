@@ -25,5 +25,11 @@ const bikes = [
     }
 ]
 console.log(bikes)
-const lessWeight = bikes.reduce((accumulator, element) => accumulator.weight < element.weight ? accumulator : element, 0);
-console.log(lessWeight)
+
+// Senza destrutturazione restituisco un oggetto con all'interno i valori della bici e del peso
+const lessWeightBike = bikes.reduce((accumulator, element) => accumulator.weight < element.weight ? accumulator : element, 0);
+console.log(lessWeightBike)
+
+// Con la destrutturazione restituisco in pagina direttamente il valore della bici e del peso in due 'variabili' diverse 
+const {name, weight} = bikes.reduce((accumulator, element) => accumulator.weight < element.weight ? accumulator : element, 0);
+console.log(`La ${name} è quella più leggera, pesa solo ${weight}kg`)
